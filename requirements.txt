@@ -11,7 +11,7 @@ python-dotenv>=0.10
 tenacity>=6.0.0
 python-magic
 beautifulsoup4
-pyrogram
+pyrogram<=1.4.16
 TgCrypto
 youtube_dl
 feedparser
