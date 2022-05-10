@@ -87,7 +87,7 @@ class TelegramDownloadHelper(DownloadHelper):
     def add_download(self, message, path, filename):
         _message = self._bot.get_messages(message.chat.id, message.message_id)
         media = None
-        media_array = [_message.document, _message.video, _message.audio]
+        media_array = [_message.file, _message.video, _message.audio]
         for i in media_array:
             if i is not None:
                 media = i
